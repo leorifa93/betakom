@@ -1,0 +1,7 @@
+{
+  "name": "betakom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
