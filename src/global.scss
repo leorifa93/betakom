@@ -24,3 +24,53 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-navbar.toolbar.toolbar-ios.statusbar-padding, ion-navbar.toolbar-ios ion-title.title-ios,
+ion-toolbar.toolbar.toolbar-ios.statusbar-padding, ion-toolbar.toolbar-ios ion-title.title-ios {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+p, a, span, h1, h2, h3, h4, h5, h6, legend, ion-input, ion-select, ion-button {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.input-item{
+  display: flex;
+  padding-left: 20px;
+  width: 100%;
+  min-height: 70px;
+  ion-input{
+    margin-top: -12px;
+  }
+
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.div-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.20);
+  margin: auto;
+}
+
+.gmnoprint {
+  span {
+    display: none;
+  }
+}
+
+.gm-style .gm-style-iw-c {
+  background-color: unset;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+}
+
+.gm-style .gm-style-iw-tc  {
+  display: none;
+}
+
+.firebase-emulator-warning {
+  display: none;
+}
